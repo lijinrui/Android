@@ -6,28 +6,28 @@
     android:layout_height="match_parent"
     tools:context="com.example.jinrui.android_helloworld.feature.MainActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_margin="10dp"
+        android:hint="请输入文本信息 ..."
+        tools:layout_editor_absoluteY="95dp" />
+
+
+    <Button
+        android:id="@+id/btn_startspeech"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:text="点击按钮语音输入 "
+        tools:layout_marginTop="400dp" />
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_main" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btn_startspeektext"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_btn_speak_now" />
+        android:layout_marginTop="100dp"
+        android:text="语音合成（把文字转声音） " />
+
 
 </android.support.design.widget.CoordinatorLayout>
